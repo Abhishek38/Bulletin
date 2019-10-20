@@ -14,23 +14,15 @@ public class BusinessDetail extends Fragment {
     public TextView authorSecond;
     public TextView headlineSecond;
     public TextView detailsSecond;
-
     String author;
     String headline;
     String time;
-
-
     public BusinessDetail() {
-
     }
-
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-
     }
 
     @Override
@@ -41,12 +33,9 @@ public class BusinessDetail extends Fragment {
         author = getArguments().getString("author");
         headline =getArguments().getString("headline");
         time =getArguments().getString("time");
-
-
         return view;
     }
-
-
+    
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -55,17 +44,10 @@ public class BusinessDetail extends Fragment {
         authorSecond = (TextView) view.findViewById(R.id.id_author_second_business);
         detailsSecond = (TextView) view.findViewById(R.id.id_details_second_business);
 
-
         authorSecond.setText(author);
         headlineSecond.setText(headline);
         detailsSecond.setText(time);
-
-
     }
-
-
-
-
 }
 
 
